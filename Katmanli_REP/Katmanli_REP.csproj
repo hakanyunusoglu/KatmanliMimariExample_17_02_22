@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{231651EA-6326-48E8-A0EB-EB7A056115EC}</ProjectGuid>
+    <ProjectGuid>{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KatmanliMimariOrnek</RootNamespace>
-    <AssemblyName>KatmanliMimariOrnek</AssemblyName>
+    <RootNamespace>Katmanli_REP</RootNamespace>
+    <AssemblyName>Katmanli_REP</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="IBaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +60,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Katmanli_ENTITIES\Katmanli_ENTITIES.csproj">
-      <Project>{7C06EF37-2A08-4978-A7BF-C619852A79A9}</Project>
-      <Name>Katmanli_ENTITIES</Name>
+    <ProjectReference Include="..\KatmanliMimari_DAL\KatmanliMimari_DAL.csproj">
+      <Project>{42DE3076-D3A6-4653-8CB3-64E068A17D1C}</Project>
+      <Name>KatmanliMimari_DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

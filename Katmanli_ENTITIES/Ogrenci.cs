@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Katmanli_ENTITIES
 {
-   public class Ogrenci
+    public class Ogrenci
     {
         public int OgrenciID { get; set; }
         [Required]
@@ -16,11 +16,10 @@ namespace Katmanli_ENTITIES
         [Required]
         public string OgrenciSoyad { get; set; }
         [StringLength(200)]
-        public string Adres { get; set; }
-        public DateTime Yas { get; set; }
+        public string OgrenciAdres { get; set; }
+        public DateTime OgrenciYas { get; set; }
         [ForeignKey("Sinif")]
         public int SinifID { get; set; }
         public Sinif Sinif { get; set; }
-
     }
 }

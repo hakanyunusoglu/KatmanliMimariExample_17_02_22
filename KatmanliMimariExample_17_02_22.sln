@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimari", "KatmanliMimariExample_17_02_22\KatmanliMimari.csproj", "{33920551-9648-4769-9AD3-58DADF815E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimari_DAL", "KatmanliMimariOrnek\KatmanliMimari_DAL.csproj", "{231651EA-6326-48E8-A0EB-EB7A056115EC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katmanli_ENTITIES", "Katmanli_ENTITIES\Katmanli_ENTITIES.csproj", "{7C06EF37-2A08-4978-A7BF-C619852A79A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimari_DAL", "KatmanliMimari_DAL\KatmanliMimari_DAL.csproj", "{42DE3076-D3A6-4653-8CB3-64E068A17D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katmanli_REP", "Katmanli_REP\Katmanli_REP.csproj", "{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimari_BL", "KatmanliMimari_BL\KatmanliMimari_BL.csproj", "{C135CEF2-2297-4E0F-A1EC-B574E5882848}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +23,22 @@ Global
 		{33920551-9648-4769-9AD3-58DADF815E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33920551-9648-4769-9AD3-58DADF815E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33920551-9648-4769-9AD3-58DADF815E4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{231651EA-6326-48E8-A0EB-EB7A056115EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{231651EA-6326-48E8-A0EB-EB7A056115EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{231651EA-6326-48E8-A0EB-EB7A056115EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{231651EA-6326-48E8-A0EB-EB7A056115EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C06EF37-2A08-4978-A7BF-C619852A79A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C06EF37-2A08-4978-A7BF-C619852A79A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C06EF37-2A08-4978-A7BF-C619852A79A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C06EF37-2A08-4978-A7BF-C619852A79A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DE3076-D3A6-4653-8CB3-64E068A17D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DE3076-D3A6-4653-8CB3-64E068A17D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DE3076-D3A6-4653-8CB3-64E068A17D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DE3076-D3A6-4653-8CB3-64E068A17D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E84EEAB-AD8A-47DA-B653-44BA2776A5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C135CEF2-2297-4E0F-A1EC-B574E5882848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C135CEF2-2297-4E0F-A1EC-B574E5882848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C135CEF2-2297-4E0F-A1EC-B574E5882848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C135CEF2-2297-4E0F-A1EC-B574E5882848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

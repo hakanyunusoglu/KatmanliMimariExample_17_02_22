@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{231651EA-6326-48E8-A0EB-EB7A056115EC}</ProjectGuid>
+    <ProjectGuid>{42DE3076-D3A6-4653-8CB3-64E068A17D1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KatmanliMimariOrnek</RootNamespace>
-    <AssemblyName>KatmanliMimariOrnek</AssemblyName>
+    <RootNamespace>KatmanliMimari_DAL</RootNamespace>
+    <AssemblyName>KatmanliMimari_DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -52,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="Migrations\202202170722451_EkleDB.cs" />
+    <Compile Include="Migrations\202202170722451_EkleDB.designer.cs">
+      <DependentUpon>202202170722451_EkleDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +68,11 @@
       <Project>{7C06EF37-2A08-4978-A7BF-C619852A79A9}</Project>
       <Name>Katmanli_ENTITIES</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202202170722451_EkleDB.resx">
+      <DependentUpon>202202170722451_EkleDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
