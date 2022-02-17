@@ -101,6 +101,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OgrenciController.cs" />
     <Compile Include="Controllers\SinifController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -115,6 +116,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Sinif\Index.cshtml" />
+    <Content Include="Views\Sinif\Detay.cshtml" />
+    <Content Include="Views\Sinif\Ekle.cshtml" />
+    <Content Include="Views\Sinif\Guncelle.cshtml" />
+    <Content Include="Views\Sinif\Sec.cshtml" />
+    <Content Include="Views\Ogrenci\Index.cshtml" />
+    <Content Include="Views\Ogrenci\Detay.cshtml" />
+    <Content Include="Views\Ogrenci\Ekle.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

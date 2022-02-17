@@ -1,0 +1,54 @@
+﻿@model KatmanliMimariExample_17_02_22.Models.SinifModel
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<div>
+    <h3>SINIF DETAYI</h3>
+    <dl>
+        <dt>@Html.DisplayNameFor(x => x.Siniflar.SinifID)</dt>
+        <dd>@Html.DisplayFor(x => x.Siniflar.SinifID)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Siniflar.Sube)</dt>
+        <dd>@Html.DisplayFor(x => x.Siniflar.Sube)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Siniflar.SinifMevcudu)</dt>
+        <dd>@Html.DisplayFor(x => x.Siniflar.SinifMevcudu)</dd>
+    </dl>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciAd)</th>
+                <th>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciSoyad)</th>
+                <th>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciYas)</th>
+                <th>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciAdres)</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            @if (Model.oList == null || Model.oList.Count == 0)
+            {
+                <tr>
+                    <td colspan="4">GÖSTERİLECEK KAYIT BULUNAMADI!</td>
+                </tr>
+            }
+            else
+            {
+            foreach (var item in Model.oList)
+            {
+                    <tr>
+                        <td>@item.OgrenciAd</td>
+                        <td>@item.OgrenciSoyad</td>
+                        <td>@item.OgrenciYas</td>
+                        <td>@item.OgrenciAdres</td>
+                    </tr>
+            }
+            }
+        </tbody>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Listeye Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</p>
+
+

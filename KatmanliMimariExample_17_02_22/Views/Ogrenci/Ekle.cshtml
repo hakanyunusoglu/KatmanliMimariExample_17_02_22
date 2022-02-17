@@ -1,0 +1,43 @@
+﻿@model KatmanliMimariExample_17_02_22.Models.SinifModel
+
+@{
+    ViewBag.Title = "Ekle";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group col-md-2">
+        @Html.LabelFor(x => x.Ogrenci.OgrenciAd)
+        @Html.EditorFor(x => x.Ogrenci.OgrenciAd, new { htmlAttributes = new { @class = "form-control " } })
+    </div>
+    <div class="form-group col-md-2">
+        @Html.LabelFor(x => x.Ogrenci.OgrenciSoyad)
+        @Html.EditorFor(x => x.Ogrenci.OgrenciSoyad, new { htmlAttributes = new { @class = "form-control " } })
+    </div>
+    <div class="form-group col-md-2">
+        @Html.LabelFor(x => x.Ogrenci.OgrenciYas)
+        @Html.EditorFor(x => x.Ogrenci.OgrenciYas, new { htmlAttributes = new { @class = "form-control " } })
+        <p class="help-block">Örnek: 01.01.2022</p>
+    </div>
+    <div class="form-group col-md-2">
+        @Html.LabelFor(x => x.Ogrenci.OgrenciAdres)
+        @Html.EditorFor(x => x.Ogrenci.OgrenciAdres, new { htmlAttributes = new { @class = "form-control " } })
+    </div>
+    <div class="form-group col-md-2">
+        @Html.LabelFor(x => x.Ogrenci.SinifID)
+        @Html.DropDownListFor(x => x.Ogrenci.SinifID, Model.SinifListesi, "--- Sınıf Seçiniz ---", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <br />
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Oluştur" class="btn btn-success" /> &nbsp;&nbsp;
+            @Html.ActionLink("Listeye Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>
+}

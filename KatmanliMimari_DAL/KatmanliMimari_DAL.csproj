@@ -56,6 +56,10 @@
     <Compile Include="Migrations\202202170722451_EkleDB.designer.cs">
       <DependentUpon>202202170722451_EkleDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202170910254_EkleSinifMevcudu.cs" />
+    <Compile Include="Migrations\202202170910254_EkleSinifMevcudu.designer.cs">
+      <DependentUpon>202202170910254_EkleSinifMevcudu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202202170722451_EkleDB.resx">
       <DependentUpon>202202170722451_EkleDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202170910254_EkleSinifMevcudu.resx">
+      <DependentUpon>202202170910254_EkleSinifMevcudu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

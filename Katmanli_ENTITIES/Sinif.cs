@@ -13,6 +13,7 @@ namespace Katmanli_ENTITIES
         //public string Kademe { get; set; }
         [Required]
         public string Sube { get; set; }
+        public int SinifMevcudu { get; set; }
 
         public ICollection<Ogrenci> Ogrenciler { get; set; }
     }

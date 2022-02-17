@@ -1,0 +1,29 @@
+﻿@model KatmanliMimariExample_17_02_22.Models.SinifModel
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<div>
+    <h3>ÖĞRENCİ DETAYI</h3>
+    <dl>
+        <dt>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciAd)</dt>
+        <dd>@Html.DisplayFor(x => x.Ogrenci.OgrenciAd)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciSoyad)</dt>
+        <dd>@Html.DisplayFor(x => x.Ogrenci.OgrenciSoyad)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciYas)</dt>
+        <dd>@Html.DisplayFor(x => x.Ogrenci.OgrenciYas)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Ogrenci.OgrenciAdres)</dt>
+        <dd>@Html.DisplayFor(x => x.Ogrenci.OgrenciAdres)</dd>
+
+        <dt>@Html.DisplayNameFor(x => x.Siniflar.Sube)</dt>
+        <dd>@Html.DisplayFor(x => x.Siniflar.Sube)</dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Listeye Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</p>
